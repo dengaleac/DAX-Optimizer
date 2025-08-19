@@ -10,6 +10,8 @@
 # Ignore aoo settings files (all environments)
 AppSettings.json
 AppSettings.*.json
+# visual studio 
+.vs/
 
 # Build results
 [Dd]ebug/
