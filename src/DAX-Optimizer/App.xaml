@@ -1,0 +1,9 @@
+﻿<Application x:Class="DAX_Optimizer.App"
+             xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+             xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+             xmlns:local="clr-namespace:DAX_Optimizer"
+             StartupUri="./UI/LandingPage.xaml">
+    <Application.Resources>
+         
+    </Application.Resources>
+</Application>

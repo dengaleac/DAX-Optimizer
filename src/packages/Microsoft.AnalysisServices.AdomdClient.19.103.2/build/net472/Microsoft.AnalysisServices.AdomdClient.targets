@@ -1,0 +1,43 @@
+﻿<?xml version="1.0" encoding="utf-8" standalone="no"?>
+<Project xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <MSBuildAllProjects>F:\dbs\sh\uikp\0729_204230\cmd\x\Directory.Build.props;;F:\dbs\sh\uikp\0729_204230\cmd\x\Tools\scopas\Custom\Extensions\Sql.Build\Sql.Build.CloudBuild.props;F:\dbs\sh\uikp\0729_204230\cmd\x\Tools\scopas\Extensions\Scopas.NetFx.props;F:\dbs\sh\uikp\0729_204230\cmd\x\Tools\scopas\Extensions\Scopas.SSIndex.props;F:\dbs\sh\uikp\0729_204230\cmd\x\Tools\scopas\custom\data\AssemblyVersionNames.props;F:\dbs\sh\uikp\0729_204230\cmd\x\Tools\scopas\Extensions\Scopas.Version.props;F:\dbs\sh\uikp\0729_204230\cmd\x\Tools\scopas\custom\data\StrongNameKeys.props;F:\dbs\sh\uikp\0729_204230\cmd\x\Tools\scopas\Extensions\Scopas.Signing.props;F:\dbs\sh\uikp\0729_204230\cmd\x\Tools\scopas\Extensions\Scopas.Localization.props;F:\dbs\sh\uikp\0729_204230\cmd\x\Tools\scopas\Custom\Extensions\Sql.Build\Sql.Build.Localization.props;F:\dbs\sh\uikp\0729_204230\cmd\x\Tools\scopas\Custom\Extensions\Sql.Build\Sql.Build.Localization.LanguageCodes.props;F:\dbs\sh\uikp\0729_204230\cmd\x\Tools\scopas\Custom\Extensions\Sql.Build\Sql.Build.Localization.LanguageCodes.Extended.props;F:\dbs\sh\uikp\0729_204230\cmd\x\Tools\scopas\Custom\Extensions\Sql.Build\Sql.Build.After.Scopas.Localization.props;F:\dbs\sh\uikp\0729_204230\cmd\x\Tools\scopas\Extensions\Scopas.Publishing.props;F:\dbs\sh\uikp\0729_204230\cmd\x\Tools\scopas\Extensions\Scopas.Common.props;F:\dbs\sh\uikp\0729_204230\cmd\x\Tools\scopas\Custom\Extensions\Sql.Build\Sql.Build.Nuget.props;F:\dbs\sh\uikp\0729_204230\cmd\x\Tools\scopas\Custom\Extensions\Sql.Build\Sql.Build.After.Scopas.Common.props;F:\dbs\sh\uikp\0729_204230\cmd\x\Tools\scopas\Extensions\Scopas.Generic.props;F:\dbs\sh\uikp\0729_204230\cmd\x\Sql\Picasso\objectmodels\nugets\AdomdClient\Microsoft.AnalysisServices.AdomdClient.BuildLogic.props;F:\dbs\sh\uikp\0729_204230\cmd\x\Tools\scopas\custom\data\templates\version.cs.template;F:\dbs\sh\uikp\0729_204230\cmd\x\Tools\scopas\custom\data\templates\version.vb.template;F:\dbs\sh\uikp\0729_204230\cmd\x\Tools\scopas\custom\data\templates\sqlglobals.h.template;F:\dbs\sh\uikp\0729_204230\cmd\x\Tools\scopas\custom\data\templates\sqlversion.h.template;F:\dbs\sh\uikp\0729_204230\cmd\x\Tools\scopas\Custom\Extensions\Sql.Build\Sql.Build.Before.Scopas.Common.targets;F:\dbs\sh\uikp\0729_204230\cmd\x\Tools\scopas\Custom\Extensions\Sql.Build\Sql.Build.Nuget.targets;F:\dbs\sh\uikp\0729_204230\cmd\x\Tools\CBT\Nuget\NugetLCA.targets;F:\dbs\sh\uikp\0729_204230\cmd\x\Tools\scopas\Extensions\Scopas.Version.targets;F:\dbs\sh\uikp\0729_204230\cmd\x\Tools\scopas\Extensions\Scopas.SSIndex.targets;F:\dbs\Cx\uikp\Microsoft.Build.Tasks.Git.1.0.0-beta2-18618-05\build\Microsoft.Build.Tasks.Git.props;F:\dbs\Cx\uikp\Microsoft.Build.Tasks.Git.1.0.0-beta2-18618-05\build\Microsoft.Build.Tasks.Git.targets;F:\dbs\Cx\uikp\Microsoft.SourceLink.Common.1.0.0-beta2-18618-05\build\Microsoft.SourceLink.Common.props;F:\dbs\Cx\uikp\Microsoft.SourceLink.Common.1.0.0-beta2-18618-05\build\Microsoft.SourceLink.Common.targets;F:\dbs\Cx\uikp\Microsoft.SourceLink.Common.1.0.0-beta2-18618-05\build\InitializeSourceControlInformation.targets;F:\dbs\Cx\uikp\Microsoft.SourceLink.Vsts.Git.1.0.0-beta2-18618-05\build\Microsoft.SourceLink.Vsts.Git.props;F:\dbs\Cx\uikp\Microsoft.SourceLink.Vsts.Git.1.0.0-beta2-18618-05\build\Microsoft.SourceLink.Vsts.Git.targets;F:\dbs\sh\uikp\0729_204230\cmd\x\Tools\scopas\Extensions\Scopas.Signing.targets;F:\dbs\sh\uikp\0729_204230\cmd\x\Tools\scopas\Extensions\Scopas.Localization.targets;F:\dbs\sh\uikp\0729_204230\cmd\x\Tools\scopas\Custom\Extensions\Sql.Build\Sql.Build.Localization.tasks;F:\dbs\sh\uikp\0729_204230\cmd\x\Tools\scopas\Custom\Extensions\Sql.Build\Sql.Build.Localization.targets;F:\dbs\sh\uikp\0729_204230\cmd\x\Tools\scopas\Custom\Extensions\Sql.Build\Sql.Build.After.Scopas.Localization.targets;F:\dbs\sh\uikp\0729_204230\cmd\x\Tools\scopas\Extensions\Scopas.Common.targets;F:\dbs\sh\uikp\0729_204230\cmd\x\Tools\scopas\Custom\Extensions\Sql.Build\Sql.Build.After.Scopas.Common.targets;F:\dbs\sh\uikp\0729_204230\cmd\x\Tools\scopas\Extensions\Scopas.Generic.targets;F:\dbs\sh\uikp\0729_204230\cmd\x\Sql\Picasso\Picasso.Nuget.tasks</MSBuildAllProjects>
+  </PropertyGroup>
+
+  <!--
+  ===============================================================================
+    Add Compression Support Binaries
+  ===============================================================================
+  -->
+
+  <Target Name="AddXpressBinaries" BeforeTargets="GetCopyToOutputDirectoryItems" Condition="'$(UsingMicrosoftNETSdk)'!='true'">
+    <!-- Identify the binaries that enable compression support -->
+    <PropertyGroup>
+      <_TargetArchitecture Condition="'$(PlatformTargetAsMSBuildArchitectureExplicitlySet)'=='true'">$(PlatformTargetAsMSBuildArchitecture)</_TargetArchitecture>
+      <_TargetArchitecture Condition="'$(_TargetArchitecture)'=='' AND ('$(PlatformTarget)'=='x86' OR ('$(PlatformTarget)'=='x64' AND '$(MSBuildExtensionsPath64)'!=''))">$(PlatformTarget)</_TargetArchitecture>
+      <_TargetArchitecture Condition="'$(_TargetArchitecture)'=='' AND ('$(PlatformTarget)'=='AnyCPU' OR '$(PlatformTarget)'=='') AND '$(Prefer32Bit)'=='true'">x86</_TargetArchitecture>
+      <_TargetArchitecture Condition="'$(_TargetArchitecture)'=='' AND ('$(PlatformTarget)'=='AnyCPU' OR '$(PlatformTarget)'=='')">x64</_TargetArchitecture>
+    </PropertyGroup>    
+    <PropertyGroup Condition="'$(_TargetArchitecture)'!=''">
+      <_XpressDllPath>$(MsBuildThisFileDirectory)..\..\runtimes\win-$(_TargetArchitecture)\native\msasxpress.dll</_XpressDllPath>
+    </PropertyGroup>
+    
+    <!-- Add the binaries to the set of files that are placed in the build output location -->
+    <ItemGroup>
+      <_XpressBinary Include="$(_XpressDllPath)" Condition="Exists('$(_XpressDllPath)')">
+        <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+        <Visible>false</Visible>
+      </_XpressBinary>
+    </ItemGroup>
+    <ItemGroup Condition="'@(_XpressBinary)'!=''">
+      <_XpressBinaryWithTargetPath Include="@(_XpressBinary)">
+        <TargetPath>%(_XpressBinary.Filename)%(_XpressBinary.Extension)</TargetPath>
+      </_XpressBinaryWithTargetPath>
+    </ItemGroup>
+    <ItemGroup Condition="'@(_XpressBinaryWithTargetPath)'!=''">
+      <AllItemsFullPathWithTargetPath Include="@(_XpressBinaryWithTargetPath)" />
+      <_SourceItemsToCopyToOutputDirectoryAlways Include="@(_XpressBinaryWithTargetPath)" Condition="'%(_XpressBinaryWithTargetPath.CopyToOutputDirectory)'=='Always'" />
+      <_SourceItemsToCopyToOutputDirectory Include="@(_XpressBinaryWithTargetPath)" Condition="'%(_XpressBinaryWithTargetPath.CopyToOutputDirectory)'=='PreserveNewest'" />
+    </ItemGroup>
+  </Target>
+</Project>

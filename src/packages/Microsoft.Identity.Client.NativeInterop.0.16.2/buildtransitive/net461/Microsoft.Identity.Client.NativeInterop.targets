@@ -1,0 +1,31 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+
+	<!-- .NET Core seems to do the right thing, so no need to copy native binaries around -->
+	<ItemGroup  Condition="$(TargetFramework.StartsWith('net4')) or '$(TargetFrameworkIdentifier)' == '.NETFramework'">
+		<EmbeddedFiles Include="$(GeneratedAssemblyInfoFile)"/>
+		<NativeLibs Include="$(MSBuildThisFileDirectory)..\..\runtimes\**\msalruntime*.dll" />
+	</ItemGroup>
+
+	<ItemGroup Condition="$(DisableMsalRuntimeTransitive)==''">
+		<!-- 
+		.NET Core has native dependencies figured out, but on .NET Fwk there is more work.
+		The interop package attempts to load msal_runtime.dll based on the default DLL search logic documented at 
+		https://learn.microsoft.com/en-us/windows/win32/dlls/dynamic-link-library-search-order
+		The interop also adds a file path to help the DLL resolver. This path is 
+		https://github.com/AzureAD/microsoft-authentication-library-for-cpp/blob/develop/msalruntime/interop/net/API.cs#L103
+		"{root}/runtimes/win-CPU/native/" where CPU is x86, x64, or arm64.
+		
+		This targets file copies the native DLLs to a folder structure that matches the interop's expectations.
+		-->
+		
+		<None Include="@(NativeLibs)">
+			<Link>runtimes\%(RecursiveDir)%(FileName)%(Extension)</Link>
+			<PublishState>Included</PublishState>
+			<Visible>False</Visible>
+			<CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+			<Pack>true</Pack>
+		</None>
+	</ItemGroup>
+
+</Project>

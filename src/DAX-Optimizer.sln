@@ -1,0 +1,25 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 17
+VisualStudioVersion = 17.13.35913.81 d17.13
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "DAX-Optimizer", "DAX-Optimizer\DAX-Optimizer.csproj", "{38B43CFD-E575-4365-AE4E-019837F72B77}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{38B43CFD-E575-4365-AE4E-019837F72B77}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{38B43CFD-E575-4365-AE4E-019837F72B77}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{38B43CFD-E575-4365-AE4E-019837F72B77}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{38B43CFD-E575-4365-AE4E-019837F72B77}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {92CD23DB-2644-4522-A386-7DBCD33F7664}
+	EndGlobalSection
+EndGlobal
